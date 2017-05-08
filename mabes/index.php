@@ -82,13 +82,15 @@ $iduse=$row['nomor_pers'];
 
                   </li>
                   <li><a href="?page=lokasi_form"><i class="fa fa-table"></i> Tambah Data Operasi <span class="fa fa-chevron-down"></span></a>
-                   
+
                   </li>
                   <li><a href="../berita/index.php"><i class="fa fa-edit"></i> Berita </a>
                   </li>
-                  <li><a href="logout.php"><i class="fa fa-sign-out"></i> Logout</a> 
+                  <li><a href="?page=hitung_biaya"><i class="fa fa-edit"></i> Trackig Lokasi Bencana </a>
                   </li>
-                  
+                  <li><a href="logout.php"><i class="fa fa-sign-out"></i> Logout</a>
+                  </li>
+
                 </ul>
               </div>
 
@@ -144,7 +146,7 @@ $iduse=$row['nomor_pers'];
            include ("dashboard.php");
            } else {
            include ($file);
-   } 
+   }
   ?>
         </div>
         <!-- /page content -->
@@ -359,7 +361,7 @@ $iduse=$row['nomor_pers'];
       });
     </script>
     <!-- /Doughnut Chart -->
-    
+
     <!-- bootstrap-daterangepicker -->
     <script>
       $(document).ready(function() {
